@@ -1,9 +1,5 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-
-	"name": "fcc-learn-npm-package-json",
+	"name": "timestamp-fcc",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
@@ -16,6 +12,6 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://idontknow/todo.git"
+		"url": "https://github.com/maks-ushakov/timestamp-fcc"
 	}
 }
