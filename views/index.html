@@ -2,8 +2,11 @@
 <html>
 
     <head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1, target-densityDPI=device-dpi"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <title>Timestamp microservice</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
       <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
       <link href="/public/style.css" rel="stylesheet" type="text/css">
@@ -14,28 +17,47 @@
     </head>
     <body>
 		<div class="container">
-			<p>freeCodeCamp API Project</p>
-            <h1 class="header">
-                Timestamp microservice
-            </h1>
-            <blockquote>
+			<header>
+				<p>freeCodeCamp API Project</p>
+			</header>
+			<section id="about">
+				<h1 class="header">
+					Timestamp microservice
+				</h1>
                 User stories:
-                <ul>1) I can pass a string as a parameter, and it will check to see whether that string 
-                contains either a unix timestamp or a natural language date (example: January 1, 2016)</ul>
-                <ul>2) If it does, it returns both the Unix timestamp and the natural language form of that date.</ul>
-                <ul>3) If it does not contain a date or Unix timestamp, it returns null for those properties.</ul>
-            </blockquote>
-            <h3>Example usage:</h3>
-            <code>https://timestamp-ms.herokuapp.com/December%2015,%202015</code><br>
-            <code>https://timestamp-ms.herokuapp.com/1450137600</code>
-            <h3>Example output:</h3>
-            <code>
-                {
-                  "unix": 1450137600,
-                  "natural": "December 15, 2015"
-                }
-            </code>
-        </div>
+				<ol>
+					<li>You can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</li>
+					<li> If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+					<li> If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+			</ol>
+
+			</section>
+			<section id="usage">
+				<h2>Example usage:</h3>
+				<p>If you want to use natural data string as parameter:</p>
+				<div>
+					<code>https://timestamp-fcc.glitch.me/June%2015,%202017</code>
+				</div>
+				<p>If you want to use <a href="https://en.wikipedia.org/wiki/Unix_time">unix timestamp</a> as parameter</p>
+				<div>
+				<code>https://timestamp-fcc.glitch.me/1497474000</code>
+				</div>
+			</section>
+			<section id="output">
+				<h2>Example output:</h3>
+				<code>
+				<pre>
+{ 
+    "unix": 1497474000, 
+    "natural": "June 15, 2017" 
+}				</pre>
+				</code>
+			</section>
+			<footer>
+				<a href="https://github.com/maks-ushakov/timestamp-fcc">
+					<i class="fa fa-github"></i></a>
+			</footer>
+	</div>
     </body>
 
 </html>
